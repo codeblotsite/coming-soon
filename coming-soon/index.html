@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#9e9e9e">
+	<title>codeblot</title>
+	<link rel="icon" sizes="192x192" type="image/png" href="favicon.png">
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection">
+
+	<!-- Mobile ready -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+	<style type="text/css">
+	body {
+		background-color: #f5f5f5;
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
+	.accent { background-color: ;}
+	header {
+		position: absolute;
+		left:0; top:0;
+	}
+	header h2 { margin: 0;}
+	main {
+		margin-top: 1.5rem;
+		flex: 1 0 auto;
+	}
+	.main { margin-top: 1.5rem;}
+	.main.col { padding: 1rem 1.5rem 2rem 1.5rem;}
+	.main>div>h2 { margin-bottom: 0.5rem;}
+	.main>div>p { margin: 0;}
+	@media only screen and (min-width: 601px) {
+		.row .col.m3-4 {
+			width: 30%;
+			margin-left: auto;
+			left: auto;
+			right: auto;
+		}
+		.row .col.push-m4-5 {
+			left: 35%;
+		}
+		#subsbtn { height: 5rem; text-align: left !important;}
+		#subsbtn>.btn {margin:0; float: left;}
+	}
+	#subsbtn>.btn {
+		margin: 0 auto;
+	}
+	.row { margin-bottom: 0;}
+	form { margin-bottom: 0.8rem;}
+	img{
+		         user-drag:none;
+		 -webkit-user-drag:none;
+		         user-select:none;
+		    -moz-user-select:none;
+		 -webkit-user-select:none;
+		-ms-user-select:none;}
+	img.rounded { border-radius: 3px;}
+	footer {
+		position: relative;
+		bottom: 0;
+	}
+	footer .social-links { width: 100%;}
+	footer .social-links li {
+		display: inline-block;
+		padding: 0 1rem;
+	}
+	footer .social-links a {
+		width: 67px;
+		height: 67px;
+	}
+	footer .social-links img {
+		width: 32px;
+	}
+	footer.page-footer {
+		padding-top: 10px;
+		background-color: #9e9e9e;
+	}
+	</style>
+</head>
+<body>
+	<main class="container row center-align">
+		<div class="main card-panel col s12 l10 push-l1 z-depth-2">
+			<div class="card-content flow-text">
+				<h2>Welcome to codeblot.</h2>
+				<div class="row center-align" style="width: 100%;">
+					<img class="responsive-img col s10 m3-4 push-s1 push-m4-5" src="imgs/loading-gears-animation-3.gif" alt="" style="cursor: progress;">
+				</div>
+				<p>We are launching pretty soon.<br>
+					Meanwhile, you can drop your email below so we can notify you when we launch.</p>
+			</div>
+			<form id="subscription-form" action="//codeblot.us12.list-manage.com/subscribe/post?u=bccf5a3b7e2e950f72a237e1f&amp;id=2d38078d2e" method="POST" name="mc-embedded-subscribe-form" target="_blank">
+				<div class="row">
+					<div class="col hide-on-small-only" style="height: 3rem; width: 10%;"></div>
+					<div class="input-field col s12 m6">
+						<label for="email">Enter your email here</label>
+						<input id="email" style="display:inline;" class="validate" size="30" type="email" name="EMAIL" required>
+					</div>
+					<div id="subsbtn" class="col s12 m3-4 valign-wrapper">
+						<button class="btn accent waves-effect waves-light valign" type="submit" name="subscribe">Subscribe Me!</button>
+					</div>
+				</div>
+	            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bccf5a3b7e2e950f72a237e1f_2d38078d2e" tabindex="-1" value=""></div>
+			</form>
+			<div><sup class="grey-text"><a>*</a> We won't spam your inbox with malicious emails.</sup></div>
+		</div>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<h6 class="white-text center-align" style="border-bottom: 1px solid rgba(245,245,245,0.17); padding-bottom: 0.5rem;"><strong>You can connect with us via:</strong></h6>
+			<ul class="social-links center">
+				<li><a class="waves-effect waves-light grey-text text-lighten-3" href="https://www.facebook.com/codeblotsite" target="_blank"><img class="responsive-img hoverable rounded" src="icons/facebook.png" alt="fb"><br>facebook</a></li>
+				<li><a class="waves-effect waves-light grey-text text-lighten-3" href="https://plus.google.com/+Codeblotsite" target="_blank"><img class="responsive-img hoverable rounded" src="icons/googleplus.png" alt="g+"><br>Google+</a></li>
+				<li><a class="waves-effect waves-light grey-text text-lighten-3" href="https://twitter.com/codeblotsite" target="_blank"><img class="responsive-img hoverable rounded" src="icons/twitter.png" alt="t"><br>twitter</a></li>
+			</ul>
+		</div>
+		<div class="footer-copyright">
+			<div class="container row">
+				<span class="col s12 right-align">&copy; codeblot 2016</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jquery CDN -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+</body>
+</html>
